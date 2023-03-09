@@ -1,0 +1,367 @@
+body{
+    background-color: #212121;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+/* Header - Bandeau de navigation */
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.navbar-expand-lg{
+  padding-right: 1%;
+}
+
+.bg-color{
+    background-color: #212121;
+}
+
+.logo-nav{
+    display: flex;
+    justify-content: center;
+    margin-left: 1%;
+}
+
+.nav-link{
+  color: white;
+}
+
+.nav-link.active{
+  color: #e50914 !important;
+  font-weight: 800;
+}
+
+.icon-nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon-nav-bis{
+    display: flex;
+    align-items: center;
+}
+
+.icon-nav-bis .bi-caret-down-fill{
+  transition: transform 0.5s ease;
+}
+
+.bi-bell{
+  font-size: 1.5em;
+  color: white;
+}
+
+.notif{
+  background-color: black;
+  border: 1px solid white;
+  color: white;
+  height: 100px;
+  width: 400px;
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+.icon-nav-bis:hover .notif{
+  display: flex;
+  opacity: 50%;
+}
+
+#icon-img{
+  margin-right: 10%;
+}
+
+.bi-caret-down-fill {
+    color: white;
+}
+
+.icon-nav-bis{
+  transition: transform 1s ease;
+}
+
+.icon-nav-bis:hover .bi-caret-down-fill{
+  transform: rotate(180deg);
+}
+
+.show{
+  background-color: black;
+  opacity: 80%;
+}
+
+.dropdown-item{
+  color:white;
+}
+
+/* Main - Index */
+/* Vidéo intégrée */
+
+.video-container{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+  
+  .video-container video{
+    position: absolute;
+    width: 100%;
+  }
+
+  .text-overlay{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: white;
+  }
+  
+  .text-overlay h2{
+    font-size: 3em;
+    margin: 2% 0 2% 0;
+  }
+  
+  .text-overlay p{
+    font-size: 1.5em;
+    margin: 0% 0 2% 0;
+    width: 35%;
+  }
+
+.button{
+    position: absolute;
+    top: 67%;
+    left: 5%;
+    display: flex;
+    width: 100%;
+    width: -webkit-fill-available;
+}
+
+.bi-play-fill{
+    font-size: 1.5em;
+}
+
+.btn{
+  width: max-content;
+  margin-right: 1%;
+}
+
+/* Classement films */
+
+.titre-class{
+    position:absolute;
+    top: 75%;
+    left: 5%;
+    color: white;
+}
+
+.rank-overlay{
+  position: absolute;
+  top: 80%;
+  display: flex;
+  padding: 0 5% 0 2%;
+}
+
+.rank-overlay .col-1{
+  display: flex;
+  align-items: center;
+}
+
+.rank-overlay span{
+  font-size: 12em;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: black;
+  position: relative;
+  left: 5%;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: #616161;
+}
+
+.rank-overlay img{
+  width: 130%;
+  position: relative;
+  right: 25%;
+  transition: transform 0.5s ease;
+}
+
+.rank-overlay img:hover{
+  transform: scale(1.3);
+}
+
+/* Carousel */
+
+.carousel-netflix{
+  margin-top: 8%;
+  padding: 0 5% 0 5%;
+  height: 12em;
+}
+
+.carousel-netflix h3, .carousel-netflixN h3{
+  color: white;
+}
+
+.carousel-netflixN{
+  margin-top: 1%;
+  padding: 0 5% 0 5%;
+  height: 12em;
+}
+
+.carousel-item img{
+  scale: 1;
+  transition: transform 1s ease;
+}
+
+.carousel-item img:hover{
+  transform: scale(1.25);
+}
+
+.carousel-control-prev {
+  left: -10%;
+}
+
+.carousel-control-next {
+  width: 5%;
+  right: -5%;
+}
+
+/* Main - Films */
+
+.affiche-titre{
+  padding-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* Travail en cours */
+
+#video-fond{
+  display: block;
+}
+
+#video-fond video{
+  position: absolute;
+  z-index: -1;
+  filter: blur(50px);
+}
+
+/* Travail en cours */
+
+.affiche-titre h1{
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.affiche-titre img{
+  width: 100%;
+}
+
+#recommandation{
+  color: #42c362;
+  margin-bottom: 1%;
+}
+
+#details-film{
+  color: white;
+  display: flex;
+  margin-bottom: 1.5%;
+}
+
+#details-film *{
+  margin-right: 1%;
+}
+
+#details-film .encadre{
+  padding: 0 0.5% 0 0.5%;
+  border: 1px solid white;
+}
+
+#categorie-film{
+  color: #B3B6B7;
+}
+
+#production-film{
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+#icon-play{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+#icon-play1{
+  display: flex;
+}
+
+#icon-play1 i, #icon-play2 i{
+  padding: 0 5% 0 5%;
+  font-size: 3em;
+}
+
+.bi-play-circle-fill, .bi-plus-circle, .bi-hand-thumbs-up, .bi-arrow-down-circle{
+  color: white;
+}
+
+.synopsis-film, .trailer-film{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.synopsis-film h2, .trailer-film h2{
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 1%;
+}
+
+#synopsis-detail{
+  padding: 0 5% 0 5%;
+  color: white;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+/* Footer */
+
+footer{
+  margin: 3% 5% 2% 5%;
+}
+
+footer .row>*{
+  width: fit-content;
+  color:white;
+  font-size: 1.5em;
+}
+
+.footer-content{
+  color: #737373;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1%;
+}
+
+.footer-content .col-3{
+  margin-bottom: 1%;
+}
+
+#code-service{
+  margin-bottom: 1%;
+}
+
+#credit{
+  color:#737373;
+  font-size: 0.8em;
+}
